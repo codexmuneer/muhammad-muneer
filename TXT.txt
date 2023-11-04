@@ -1,0 +1,264 @@
+
+#hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 4rem;
+    color: #fff;
+    position: relative; /* Add position property */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 2rem;
+    border-top-left-radius: 20px; /* Rounded top corners */
+    border-top-right-radius: 20px; /* Rounded top corners */
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the hero section */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.hero-content h1, .hero-content p, .hero-content .cta-button {
+    color: #fff; /* Text color for the content */
+    margin: 0.5rem 0;
+}
+
+
+
+
+/* For screens smaller than 768rem (tablets and mobile phones) */
+@media (max-width: 768px) {
+  .my-element h1 {
+    font-size: 4rem; /* Reduce the font size for the header */
+    margin-top: 20rem;
+  }
+
+  .my-element p {
+    font-size: 15rem; /* Reduce the font size for the header */
+    margin-top: 20rem;
+
+  }
+
+}
+
+/* For screens smaller than 576rem (mobile phones) */
+@media (max-width: 576rem) {
+  .my-element h1 {
+    font-size: 30rem; /* Further reduce the font size for smaller screens */
+    /* margin-top: 40rem; */
+ 
+
+  }
+
+  .my-element p {
+    font-size: 12rem; /* Further reduce the font size for smaller screens */
+    /* margin-top: 40rem; */
+  
+    
+
+  }
+}
+
+
+
+							<div class="feature-list mt-4">
+								<div class="row clearfix">
+									<div class="col-lg-6 col-md-6 col-sm-12 column">
+										<img class="mb-3" src="images/resource/service-d1.jpg" alt="images">
+										<p>Lorem ipsum dolor sit amet consec adipis elit Dolor repellat pariatur temporibus doloribus hic conse quatur copy typing refreshing</p>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 column">
+										<img class="mb-3" src="images/resource/service-d2.jpg" alt="images">
+										<p>Lorem ipsum dolor sit amet consec adipis elit Dolor repellat pariatur temporibus doloribus hic conse quatur copy typing refreshing</p>
+									</div>
+								</div>
+							</div>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Solve Ai Solutions</title>
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header> 
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="#">
+            <img
+			  height="1"
+			  width="100"
+              src="images/logo2.png"
+              alt="Company Logo"
+              class="d-inline-block img-fluid align-top"
+            />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="button2" href="contact.html">Contact Us</a>
+				  </li>
+			</ul>
+        </div>
+      </nav>
+    </header>
+
+  <!-- <section class="about-content">
+    <div class="container">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>We are a passionate team of professionals dedicated to providing high-quality solutions for our clients. Our journey began with a vision to make a difference in the digital world.</p>
+        <p>With years of experience and innovation, we have successfully delivered outstanding results and built strong relationships with our clients.</p>
+      </div>
+      <div class="about-image">
+        <img src="company-image.jpg" alt="Company Image">
+      </div>
+    </div>
+  </section>
+  <section class="team">
+    <div class="container">
+      <h2>Our Team</h2>
+      <div class="team-member">
+        <div class="member-image">
+          <img src="team-member1.jpg" alt="Team Member 1">
+        </div>
+        <div class="member-info">
+          <h3>John Doe</h3>
+          <p>Co-Founder</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="member-image">
+          <img src="team-member2.jpg" alt="Team Member 2">
+        </div>
+        <div class="member-info">
+          <h3>Jane Smith</h3>
+          <p>Lead Designer</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+ <div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class="section-title">About Us</h1>
+      <p>
+        We are a leading digital solutions provider, offering a wide range of services to help your business grow and succeed in the digital world.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Our Mission</h5>
+          <p class="card-text">
+            We are on a mission to provide innovative digital solutions that drive growth and transformation for our clients.
+          </p>
+        </div>
+      </div>
+      <div class="card mt-4">
+        <div class="card-body">
+          <h5 class="card-title">Our Team</h5>
+          <p class="card-text">
+            Our team of experts is dedicated to delivering exceptional results and ensuring client satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="footer-widget">
+            <h3>About Us</h3>
+            <p>
+              We are a leading digital solutions provider, offering a wide range of services to help your business grow and succeed in the digital world.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="footer-widget">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <!-- <li><i class="fas fa-map-marker"></i> 123 Main Street, City, Country</li> -->
+              <li><i class="fas fa-envelope"></i> SolveAIsolutions@gmail.com</li>
+              <li><i class="fas fa-phone"></i> +1 (123) 456-7890</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="footer-widget">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-bottom">
+            <p>&copy; 2023 SolveAIsolutions. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

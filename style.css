@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 40%;
+    }
+  }
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 576px) {
+
+    html{
+        font-size: 30%;
+    }
+
+  }
+
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #303030;
+    color: #fff;
+    padding: 0.1rem 0; /* Reduce the top and bottom padding */
+}
+
+section {
+    /* background-color: rgba(0, 0, 0, 0.6); Add background color with some transparency */
+    padding: 2rem;
+    margin-top: 3rem; /* Adjust the value as needed */
+
+}
+
+
+.navbar {
+    /* height: 30rem; 
+    padding: 5rem 0;  */
+    background-color: #333;
+    font-size: 1.5rem;
+}
+
+
+
+nav li {
+    margin: 0 0.5rem; 
+}
+
+nav a.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.2rem 0.4rem; 
+    border-bottom: 0.2rem solid transparent;
+    transition: border-color 0.3s; 
+}
+
+nav a.nav-link:hover {
+    border-color: #9e30c7;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #9e30c7; /* Change to your desired button background color */
+    color: #ffffff; /* Change to your desired text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+  }
+
+
+  
+  
+
+.vertical-line {
+    border-right: 0.2rem solid #ccc; /* Add a right border to create a vertical line */
+    padding-right: 1rem; /* Add padding on the right to separate the text from the line */
+}
+
+.bg-orange {
+    background-color:  #f3f2ee;  /* Set the background color to black */
+}
+
+
+
+.rounded {
+    border-radius: 1rem; /* Adjust the radius as needed */
+}
+
+.custom-div {
+    width: 20rem; /* Set the width to 200 pixels */
+    height: 25rem; /* Set the height to 150 pixels */
+}
+.container {
+    margin-top: 3rem; /* Adjust the value as needed */
+}
+
+.highlight {
+    margin-top: 5rem;
+    background-color: #f48c06;/* You can use any color you like */
+    border-radius: 0.5rem;
+    display: inline; /* Make the span an inline element */
+
+}
+
+
+
+  
+/* Define a keyframe animation for the text */
+@keyframes textAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the elements with the "animated-text" class */
+h1.animated-text, p.animated-text {
+    animation: textAnimation 1.5s ease-in-out forwards; /* Use the animation */
+}
+
+#benefits h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Initial state of the element */
+.animated-text2 {
+    font-size: 6rem;
+    font-weight: 1000;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* Animate the element when it comes into view */
+.animated-text2.in-view {
+    animation: typing 2s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+    opacity: 1;
+}
+
+/* Add this to hide the typing bar after typing is completed */
+.animated-text2.in-view::after {
+    content: ' ';
+    animation: typing-bar-hide 0.5s forwards 4s; /* Hide it after the typing animation */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+}
+
+@keyframes typing-bar-hide {
+    from,
+    to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        display: none;
+    }
+}
+
+
+/* Initial state of the element */
+.my-element {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  /* Animate the element when it comes into view */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation when the element is in the viewport */
+  @media (prefers-reduced-motion: no-preference) {
+    .my-element.in-view {
+      animation: fadeIn 1s both;
+    }
+  }
+  
+
+
+
+
+
+
+/* Initial state of the element */
+.image-slide-in {
+    opacity: 0;
+    transform: translateY(10rem);
+}
+
+/* Animate the element when it comes into view */
+.image-slide-in.in-view {
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(10rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* CSS */
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 0.2rem solid #1A1A1A;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 2rem;
+    /* min-width: 0; */
+    outline: none;
+    padding: 1.6rem 2.4rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background-color: #333;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8rem 15rem;
+    transform: translateY(-2rem);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+
+@media (max-width: 576px) {
+    .button-28 {
+        width: 60%; /* Make the boxes full-width on smaller screens */
+        /* height: 15vh; */
+        margin-top: 3rem;
+
+    }
+}
+
+
+#hero .my-element {
+    margin-top: 20rem;
+}
+
+/* Default styles */
+.my-element h1 {
+    font-size: 5rem; 
+    font-weight: bold; 
+    color: #333;
+    
+    /* position: relative; */
+  
+  }
+  
+  .my-element p {
+    font-size: 2rem;
+    font-weight: bold; 
+    color: #333;
+  
+  }
+  
+  
+
+#hero {
+    background-image: url("images/hero10.png");
+    background-size: cover;
+    background-position: center; 
+    /* height: 80rem;
+    width: 160rem; */
+    height: 100vh; /* 80% of the viewport height */
+    width: 100%; /* 100% of the parent container's width */
+    text-align: center;
+    /* padding: 2rem; */
+    /* background-color: #6900ff;  */
+}
+
+
+  #three-d-div {
+    width: 20%; /* Relative width */
+    height: 20rem; /* Fixed height in 'rem' units */
+    background-color: #f3f2ee; /* Background color of the div */
+    box-shadow: 0.5rem 0.5rem 1rem #888888; /* Add a shadow effect (horizontal offset, vertical offset, blur radius, color) */
+    border-radius: 1rem; /* Rounded corners for a smoother 3D effect */
+    color: #303030; /* Text color inside the div */
+    text-align: center;
+    padding: 2rem;
+    margin-right: 5%; /* Relative margin */
+}
+
+#three-d-div img {
+    max-width: 50%; /* Images will not exceed their parent's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing around the images */
+    margin: 0 auto; /* Center the images horizontally */
+  }
+  
+
+/* .btn btn-primary {
+    background-color: #303030;
+} */
+
+ h3{
+    color: #303030;
+}
+
+
+#services {
+    background-color: #f3f2ee; /* Replace with the desired background color */
+    padding: 3rem 0; /* Add some vertical padding for better spacing */
+}
+
+#services img{
+    height: 15vh;
+    width: 30%;
+}
+
+.service-box {
+    height: 40vh;
+    background-color: #fff;
+    border: 0.2rem solid #ddd;
+    padding: 2rem;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s; /* Combine transitions into one line */
+    margin-bottom: 2rem;
+}
+
+.service-box:hover {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem);
+}
+
+.service-button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Make the service boxes responsive */
+@media (max-width: 576px) {
+    .service-box {
+        width: 60%; /* Make the boxes full-width on smaller screens */
+        height: 15vh;
+        margin-left: 16rem; /* Remove any left margin */
+        margin-right: 0; /* Remove any right margin */
+        border: none; /* Remove the border on smaller screens */
+    }
+
+    #services img{
+        height: 5vh;
+        width: 15%;
+    }
+}
+
+
+
+ /* Custom CSS for Portfolio Section */
+
+ 
+ #portfolio {
+    background-color: #9e30c7;
+    color: #fff;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 3.6rem;
+    margin-bottom: 0.2rem;
+}
+
+#portfolio p {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.project-card {
+    background-color: #303030;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1.5rem;
+    box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 2.4rem;
+    margin-bottom: 0.1rem;
+}
+
+.project-card p {
+    font-size: 1.6rem;
+}
+
+.project-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+
+
+.wrapper {
+  max-width: 130rem;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+.wrapper i {
+  top: 50%;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 5rem;
+  background: #333;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -2.2rem;
+}
+.wrapper i:last-child{
+  right: -2.2rem;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 1.2rem);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.6rem;
+  border-radius: 0.8rem;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 34.2rem;
+  list-style: none;
+  background: #f2f3ee;
+  cursor: pointer;
+  padding-bottom: 1.5rem;
+  flex-direction: column;
+  border-radius: 0.8rem;
+}
+.carousel .card .img {
+  background: #333;
+  height: 24rem;
+  width: 90%;
+  border-radius: 5%;
+}
+.card .img img {
+  width: 70%;
+  height: 18rem;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 0.4rem solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 3rem 0 0.5rem;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 0.9rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 60%;
+  }
+}
+
+
+
+
+
+ /* Custom CSS for Client Reviews Section */
+ #reviews {
+    background-color: #f7f7f7;
+    padding: 0.4rem;
+    text-align: center;
+    
+}
+
+#reviews h2 {
+    font-size: 5rem;
+    margin-bottom: 0.2rem;
+}
+
+.review-card {
+
+    background-color: #fff;
+    width: 80%;
+    height: 20vh;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-card p {
+    font-size: 1.8rem;
+}
+
+.review-author {
+    margin-top: 0.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Make the service boxes responsive */
+@media (max-width: 576px) {
+    .review-card {
+        width: 60%; /* Make the boxes full-width on smaller screens */
+        height: 15vh;
+        margin-left: 16rem; /* Remove any left margin */
+        margin-right: 0; /* Remove any right margin */
+    }
+}
+
+
+
+    /* Custom CSS for Recent Blog Posts Section */
+        #blog {
+            background-color: #ffffff;
+            color: #fff;
+            padding: 0.4rem;
+        }
+
+        #blog h2 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .blog-post {
+            height: 30vh;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 1rem;
+            box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .blog-post:hover {
+            transform: scale(1.05);
+        }
+
+        .blog-post h3 {
+            font-size: 2.4rem;
+        }
+
+        .blog-author {
+            font-weight: bold;
+            color: #9e30c7;
+        }
+
+        .read-more-button {
+            text-align: center;
+            margin-top: 0.2rem;
+        }
+
+        .read-more-button a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #9e30c7;
+            color: #fff;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+/* Make the service boxes responsive */
+@media (max-width: 576px) {
+    .blog-post {
+        width: 60%; /* Make the boxes full-width on smaller screens */
+        height: 15vh;
+        margin-left: 16rem; /* Remove any left margin */
+        margin-right: 0; /* Remove any right margin */
+    }
+}
+
+
+
+
+          /* CSS styles for the Contact Us section */
+          #contact {
+              background-color: #333;
+              color: #fff;
+              padding: 0.4rem;
+              text-align: center;
+          }
+  
+          #contact h2 {
+              font-size: 3.6rem;
+              margin-bottom: 0.2rem;
+          }
+  
+          #contact p {
+              font-size: 1.8rem;
+              margin-bottom: 0.2rem;
+          }
+  
+          #contact .contact-button {
+              background-color: #f48c06;
+              color: #fff;
+              padding: 1rem 2rem;
+              border: none;
+              border-radius: 0.5rem;
+              font-weight: bold;
+              text-decoration: none;
+              margin-top: 2rem;
+          }
+  
+          #contact .contact-button:hover {
+              background-color: #ffaa33;
+          }
+  
+          /* CSS styles for the contact form */
+          #contact-form {
+              max-width: 40rem; /* Adjust the form width as needed */
+              margin: 0 auto;
+          }
+  
+          #contact-form input[type="text"],
+          #contact-form input[type="email"],
+          #contact-form textarea {
+              width: 100%;
+              padding: 1rem;
+              margin-bottom: 2rem;
+              border: 0.1rem solid #ccc;
+              border-radius: 0.5rem;
+          }
+  
+          #contact-form input[type="submit"] {
+              background-color: #f48c06;
+              color: #fff;
+              border: none;
+              border-radius: 0.5rem;
+              padding: 1rem 2rem;
+              font-weight: bold;
+              margin-bottom: 2rem;
+          }
+  
+          #contact-form input[type="submit"]:hover {
+              background-color: #ffaa33;
+          }
+      
+
+
+          .hidden {
+            display: none;
+        }
+
+
+/* Icon color */
+.search-submit i {
+    color: #333; /* Change this to your desired icon color */
+  }
+  
+  /* Button color */
+  .search-submit {
+    background-color: #9e30c7; 
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button color on hover */
+  .search-submit:hover {
+    background-color: #f1f4ee; /* Change this to your desired button background color on hover */
+  }
+
+/* Button class */
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #9e30c7; /* Change to your desired button background color */
+    color: #ffffff; /* Change to your desired text color */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    background-color: #333 /* Change to your desired button background color on hover */
+  }
+  
+
+
+
+
+
+
+/* CSS for the attractive footer with a black background */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 0;
+  }
+  
+  .footer-widget {
+    margin-bottom: 2em;
+  }
+  
+  .footer-widget h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-info i {
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  .footer-links li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #bbb;
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+
+ 
+
+
+
+
