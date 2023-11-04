@@ -40,7 +40,12 @@ header {
     font-size:1.5rem;
 }
 
+@media (max-width: 576px) {
+  .navbar {
+    font-size: 3rem;
+  }
 
+}
 
 nav li {
     margin: 0 0.5rem; 

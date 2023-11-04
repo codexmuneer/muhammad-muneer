@@ -58,6 +58,12 @@ section {
     font-size: 1.5rem;
 }
 
+@media (max-width: 576px) {
+  .navbar {
+    font-size: 3rem;
+  }
+
+}
 
 
 nav li {
@@ -149,6 +155,17 @@ h1.animated-text, p.animated-text {
     font-size: 5rem;
     font-weight: 700;
     color: #333;
+}
+
+#benefits h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#benefits p{
+  font-size: 2rem;
+  color: #333;
 }
 
 /* Initial state of the element */
@@ -394,8 +411,21 @@ h1.animated-text, p.animated-text {
     width: 30%;
 }
 
+#services h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+#services p{
+  font-size: 1.5rem;
+  color: #333;
+}
+
+
 .service-box {
-    height: 40vh;
+    height: 60vh;
+    width: 100%;
     background-color: #fff;
     border: 0.2rem solid #ddd;
     padding: 2rem;
@@ -418,7 +448,7 @@ h1.animated-text, p.animated-text {
 @media (max-width: 576px) {
     .service-box {
         width: 60%; /* Make the boxes full-width on smaller screens */
-        height: 15vh;
+        height: 25vh;
         margin-left: 16rem; /* Remove any left margin */
         margin-right: 0; /* Remove any right margin */
         border: none; /* Remove the border on smaller screens */
