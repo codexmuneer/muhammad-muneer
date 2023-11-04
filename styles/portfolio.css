@@ -175,9 +175,9 @@ footer {
 .project-card {
   max-width: 200rem;
   width: 100%;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin: 1.1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 0.3s;
   cursor: pointer;
