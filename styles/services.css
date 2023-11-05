@@ -122,7 +122,7 @@ footer {
 
 
   .cover {
-    background-image: url("/images/cover2.png");
+    background-image: url("cover2.png");
     background-size: cover;
     background-position: center; 
     /* height: 80rem;

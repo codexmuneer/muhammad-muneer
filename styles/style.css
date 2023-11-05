@@ -359,7 +359,7 @@ h1.animated-text, p.animated-text {
   
 
 #hero {
-    background-image: url("/images/hero10.png");
+    background-image: url("hero10.png");
     background-size: cover;
     background-position: center; 
     /* height: 80rem;
